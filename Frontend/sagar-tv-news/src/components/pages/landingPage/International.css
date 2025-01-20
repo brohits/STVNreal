@@ -1,0 +1,185 @@
+.InternationalContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.InternationalCard {
+    width: 267px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background-color: #fff;
+    flex: 1;
+}
+  
+.InternationalBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+.InternationalCardImage {
+    width: 100%;
+    height: auto;
+}
+  
+.InternationalCardContent {
+    padding: 16px;
+}
+  
+.InternationalCardTitle {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 8px;
+}
+  
+.InternationalCardDescription {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+}
+  
+.InternationalCardFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+  
+.InternationalReadMore {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.InternationalCardActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.InternationalShareIcon {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.InternationalShareIcon:hover {
+    color: #333;
+}
+
+.InternationalAuthorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.InternationalAuthor {
+    font-weight: 500;
+    color: #333;
+}
+
+.InternationalDate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.InternationalCalendarIcon {
+    font-size: 14px;
+    color: #666;
+}
+
+.International-title-section{
+    font-size: large;
+    color: #D01F1F;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.InternationalSection-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.gradient-underline {
+    height: 6px;
+    background: linear-gradient(to right, #D01F1F 0%, #ffffff00 100%);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+.International{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .InternationalContainer {
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .InternationalCard {
+        width: calc(50% - 15px);
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .InternationalContainer {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .InternationalCard {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .InternationalCardTitle {
+        font-size: 16px;
+    }
+
+    .InternationalCardDescription {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .InternationalContainer {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .InternationalCardTitle {
+        font-size: 15px;
+    }
+
+    .InternationalCardDescription {
+        font-size: 12px;
+    }
+}

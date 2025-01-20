@@ -1,0 +1,45 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Large card takes 2x space, small cards take 1x */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+  
+  .large-card {
+    grid-column: 1 / 2; /* Occupy the left column */
+  }
+  
+  .small-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid */
+    gap: 15px; /* Space between small cards */
+    grid-column: 2 / 3; /* Occupy the right column */
+  }
+  
+  .main-news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-news-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .main-news-card h3 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  
+  .main-news-card p {
+    font-size: 0.9rem;
+    margin: 10px;
+    color: #555;
+  }
+  

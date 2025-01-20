@@ -1,0 +1,55 @@
+.district-wise-news-header {
+  background-color: #D01F1F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.district-wise-news-title {
+  margin: 0;
+  padding: 10px;
+  font-size: medium;
+}
+
+.district-wise-news-nav {
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  gap: 4vw;
+  margin: 0;
+}
+
+.district-tab {
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.district-wise-news-search-bar {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  margin: 0;
+  background-color: #B81A1A;
+  color: white;
+}
+
+.gradient-underline {
+    height: 4px; /* Thickness of the underline */
+    width: 400px; /* Adjust the width as needed */
+    background: linear-gradient(to right, #b71c1c, transparent); /* Red to transparent gradient */
+    border: none;
+    margin-bottom: 5px /* Optional: Add spacing */
+  }
+  
+  .district-wise-news-header-container {
+  justify-content: space-around;
+  margin: 10vw
+  }
+
+  .district-tab:hover{
+    background-color: #b71c1c;
+    
+  }

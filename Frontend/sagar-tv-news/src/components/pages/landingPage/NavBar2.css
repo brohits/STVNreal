@@ -1,0 +1,157 @@
+.nav-bar-2 {
+  background-color: #D01F1F;
+  padding: 0.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-bar-2-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-bar-2-home {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+
+.nav-bar-2-home:hover {
+  color: #ffcccc;
+}
+
+.nav-bar-2-home-icon {
+  font-size: 1.5rem;
+}
+
+.nav-bar-2-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+
+.nav-bar-2-nav {
+  margin-right: 1rem;
+  z-index: 11;
+}
+
+.nav-bar-2-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 9rem;
+}
+
+.nav-bar-2-nav li {
+  padding: 0.5rem 0;
+}
+
+.nav-bar-2-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-bar-2-link:hover {
+  color: #ffcccc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-bar-2-menu-toggle {
+    display: block;
+  }
+
+  .nav-bar-2-nav {
+    position: fixed;
+    top: 222px; /* Changed from 0 to 120px to start after both navbars */
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 120px); /* Adjusted height to account for top offset */
+    background-color: #D01F1F;
+    margin: 0;
+    padding-top: 20px; /* Reduced padding since we moved the entire menu down */
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-bar-2-nav.active {
+    right: 0;
+  }
+
+  .nav-bar-2-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-bar-2-nav li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-bar-2-link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .nav-bar-2-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Add overlay when menu is active */
+  .nav-bar-2-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .nav-bar-2-overlay.active {
+    display: block;
+  }
+
+  /* Prevent body scroll when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .nav-bar-2-nav ul {
+    gap: 1.5rem;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+  .nav-bar-2-nav {
+    width: 85%;
+  }
+}

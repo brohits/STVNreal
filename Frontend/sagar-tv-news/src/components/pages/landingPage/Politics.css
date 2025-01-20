@@ -1,0 +1,141 @@
+.PoliticsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.PoliticsCard {
+    width: 267px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background-color: #fff;
+    flex: 1;
+}
+  
+.PoliticsBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+.PoliticsCardImage {
+    width: 100%;
+    height: auto;
+}
+  
+.PoliticsCardContent {
+    padding: 16px;
+}
+  
+.PoliticsCardTitle {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 8px;
+}
+  
+.PoliticsCardDescription {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+}
+  
+.PoliticsCardFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+  
+.PoliticsCardActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.PoliticsShareIcon {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.PoliticsShareIcon:hover {
+    color: #333;
+}
+
+.PoliticsReadMore {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.PoliticsReadMore:hover {
+    color: #b71c1c;
+}
+
+.PoliticsAuthorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.PoliticsAuthor {
+    font-weight: 500;
+    color: #333;
+}
+
+.PoliticsDate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.PoliticsCalendarIcon {
+    font-size: 14px;
+    color: #666;
+}
+
+.Politics-title-section{
+    font-size: large;
+    color: #D01F1F;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.PoliticsSection-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.gradient-underline {
+    height: 6px;
+    background: linear-gradient(to right, #D01F1F 0%, #ffffff00 100%);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+.Politics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,33 @@
+
+.whatsapp-button {
+    display: flex;
+    align-items: center; /* Vertically centers icon and text */
+    justify-content: center; /* Centers content horizontally */
+    background-color:#0F8927; /* WhatsApp Green */
+    color: white;
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    gap: 10px; /* Space between the icon and text */
+    margin-bottom: 1rem;
+    
+    
+    
+  }
+  
+  .whatsapp-button .icon {
+    font-size: 35px; /* Adjust the size of the icon */
+    
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #007a18; /* Darker WhatsApp Green */
+  }
+  a{
+    text-decoration: none;
+    
+  }
+  

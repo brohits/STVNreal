@@ -1,0 +1,43 @@
+.adminPanelNavBar{
+    background-color: #333;
+    color: #a19696;
+    padding: 10px;
+    align-items: center;
+}
+
+.adminPanelNavBar Ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    gap: 20px;
+}
+
+.adminPanelSideBar{
+    background-color: #8d8d8d;
+    color: #000000;
+    padding: 10px;
+    align-items: center;
+    width: 20%;
+    padding-right: 20px;
+    height: 100vh;
+    list-style: none;
+}
+
+.adminPanelSideBar ul{
+    list-style: none;
+}
+
+/* Custom styles for AdminPanel */
+.MuiDrawer-paper {
+  background-color: #f8f9fa !important;
+}
+
+.MuiListItem-root.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.MuiListItem-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}

@@ -1,0 +1,185 @@
+.SportsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.SportsCard {
+    width: 267px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background-color: #fff;
+    flex: 1;
+}
+  
+.SportsBadge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+.SportsCardImage {
+    width: 100%;
+    height: auto;
+}
+  
+.SportsCardContent {
+    padding: 16px;
+}
+  
+.SportsCardTitle {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 8px;
+}
+  
+.SportsCardDescription {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+}
+  
+.SportsCardFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+  
+.SportsReadMore {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.SportsCardActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.SportsShareIcon {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.SportsShareIcon:hover {
+    color: #333;
+}
+
+.SportsAuthorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.SportsAuthor {
+    font-weight: 500;
+    color: #333;
+}
+
+.SportsDate {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.SportsCalendarIcon {
+    font-size: 14px;
+    color: #666;
+}
+
+.Sports-title-section{
+    font-size: large;
+    color: #D01F1F;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.SportsSection-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.gradient-underline {
+    height: 6px;
+    background: linear-gradient(to right, #D01F1F 0%, #ffffff00 100%);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+.Sports{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .SportsContainer {
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .SportsCard {
+        width: calc(50% - 15px);
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .SportsContainer {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .SportsCard {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .SportsCardTitle {
+        font-size: 16px;
+    }
+
+    .SportsCardDescription {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .SportsContainer {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .SportsCardTitle {
+        font-size: 15px;
+    }
+
+    .SportsCardDescription {
+        font-size: 12px;
+    }
+}
