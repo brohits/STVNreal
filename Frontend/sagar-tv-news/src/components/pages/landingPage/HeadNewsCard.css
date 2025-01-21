@@ -7,12 +7,45 @@
   background-repeat: no-repeat;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease;
-  background-image: url("../../../assets/ipl-2025-mega-auction\ 1.png");
+  margin-bottom: 20px;
 }
 
-.head-news-card:hover {
-  transform: scale(1.02);
+.head-news-card.loading,
+.head-news-card.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.head-news-card.error {
+  background: #fee;
+  color: #d33;
+}
+
+.breaking-news-badge {
+  background: #ff0000;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .head-news-card-overlay {
@@ -29,7 +62,6 @@
   z-index: 1;
   color: white;
   padding: 20px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -40,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 800px;
 }
 
 .head-news-content h2 {
@@ -49,21 +82,40 @@
   line-height: 1.3;
 }
 
-.head-newsCard-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.head-newsCard-list li {
-  margin-bottom: 8px;
-  font-size: 16px;
+.head-news-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
   opacity: 0.9;
 }
 
-.head-read-more-section {
+.news-location,
+.news-category {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.news-meta {
   display: flex;
-  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.news-author,
+.news-date {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.head-read-more-section {
+  margin-top: 20px;
 }
 
 .Head-read-more {
@@ -73,32 +125,57 @@
   align-items: center;
   gap: 8px;
   font-size: 16px;
+  font-weight: 500;
   transition: opacity 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 4px;
 }
 
 .Head-read-more:hover {
   opacity: 0.8;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .read-more-arrow {
   width: 20px;
-  height: 2px;
-  background-color: white;
+  height: 20px;
   position: relative;
 }
 
 .read-more-arrow::after {
   content: '';
   position: absolute;
-  right: 0;
   top: 50%;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+.read-more-arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
   width: 8px;
   height: 8px;
-  border-right: 2px solid white;
   border-top: 2px solid white;
+  border-right: 2px solid white;
   transform: translateY(-50%) rotate(45deg);
 }
 
-.left-panel {
-  height: 100%;
+@media (max-width: 768px) {
+  .head-news-card {
+    height: 300px;
+  }
+
+  .head-news-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .head-news-content p {
+    font-size: 1rem;
+  }
 }

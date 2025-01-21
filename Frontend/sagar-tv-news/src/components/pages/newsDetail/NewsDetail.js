@@ -38,7 +38,7 @@ const NewsDetail = () => {
         try {
           setLoading(true);
           console.log('Fetching article with id:', id);
-          const response = await fetchWithConfig(`/api/news/${id}`);
+          const response = await fetchWithConfig(`/news/${id}`);
           console.log('Response status:', response.status);
           if (!response.ok) {
             throw new Error('Article not found');
@@ -58,14 +58,16 @@ const NewsDetail = () => {
     };
 
     fetchArticle();
-  }, [id]);
+  }, [id, article]);
 
   if (loading) {
     return (
       <>
         <NavBar1 />
         <NavBar2 />
-        <div className="news-detail-container">Loading...</div>
+        <div className="news-detail-container">
+          <div className="loading-spinner">Loading...</div>
+        </div>
       </>
     );
   }
@@ -75,7 +77,13 @@ const NewsDetail = () => {
       <>
         <NavBar1 />
         <NavBar2 />
-        <div className="news-detail-container">Article not found</div>
+        <div className="news-detail-container error-message">
+          <h2>Article not found</h2>
+          <p>{error}</p>
+          <Link to="/" className="back-home-link">
+            <IoHomeOutline /> Back to Home
+          </Link>
+        </div>
       </>
     );
   }
